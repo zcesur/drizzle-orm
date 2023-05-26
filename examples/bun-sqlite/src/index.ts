@@ -1,8 +1,6 @@
 import { Database } from 'bun:sqlite';
-import { sql } from 'drizzle-orm';
+import { sql, asc, eq, placeholder } from 'drizzle-orm';
 import { drizzle } from 'drizzle-orm/bun-sqlite';
-import { asc, eq } from 'drizzle-orm/expressions';
-import { placeholder } from 'drizzle-orm/sql';
 import { alias } from 'drizzle-orm/sqlite-core';
 import { bench, group, run } from 'mitata';
 

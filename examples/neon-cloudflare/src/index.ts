@@ -1,5 +1,5 @@
 import { Client } from '@neondatabase/serverless';
-import { eq } from 'drizzle-orm/expressions';
+import { eq } from 'drizzle-orm';
 import type { NeonDatabase } from 'drizzle-orm/neon-serverless';
 import { drizzle } from 'drizzle-orm/neon-serverless';
 import type { Request as IttyRequest, Route} from 'itty-router';
